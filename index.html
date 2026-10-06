@@ -1,0 +1,785 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Ijal's Creative Portfolio — Informatics Engineering, web development, data, digital projects, and creative experiments."
+    />
+    <meta name="author" content="Ijal" />
+    <meta name="theme-color" content="#22202E" />
+    <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/input.css" />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#22202E",
+              secondary: "#3F3C4F",
+              accent: "#5C4A78",
+              soft: "#B596AD",
+              muted: "#B8B5C3",
+            },
+          },
+        },
+      };
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Home — Ijal's Creative Portfolio</title>
+  </head>
+  <body class="theme-text min-h-screen bg-primary text-white antialiased">
+    <div class="page-shell">
+      <header
+        data-navbar
+        class="theme-nav fixed inset-x-0 top-0 z-50 border-b border-white/5 bg-primary/65 backdrop-blur-xl transition-all duration-500"
+      >
+        <nav
+          class="mx-auto flex max-w-6xl items-center justify-between px-5 py-4"
+          aria-label="Primary navigation"
+        >
+          <a
+            href="index.html"
+            class="brand-link theme-text group flex items-center gap-2 text-base font-bold tracking-tight text-white"
+            aria-label="Ijal's Creative Portfolio home"
+            ><span
+              class="brand-mark flex h-9 w-9 items-center justify-center rounded-xl border border-white/10 bg-white/5 text-soft transition duration-300 group-hover:rotate-6 group-hover:border-soft/40"
+              ><i class="fa-solid fa-sparkles"></i></span
+            ><span
+              >Ijal's <span class="text-soft">Creative</span> Portfolio</span
+            ></a
+          >
+          <div class="flex items-center gap-2">
+            <button
+              data-theme-toggle
+              class="icon-button theme-text"
+              aria-label="Use light theme"
+            >
+              <i class="fa-solid fa-sun"></i></button
+            ><button
+              data-menu-button
+              aria-expanded="false"
+              aria-label="Open menu"
+              class="icon-button theme-text md:hidden"
+            >
+              <i class="fa-solid fa-bars"></i>
+            </button>
+          </div>
+          <div data-desktop-nav class="hidden items-center gap-1 md:flex">
+            <a
+              data-nav="index.html"
+              href="index.html"
+              class="nav-link theme-muted"
+              ><i class="fa-solid fa-house"></i><span>Home</span></a
+            ><a
+              data-nav="gallery.html"
+              href="gallery.html"
+              class="nav-link theme-muted"
+              ><i class="fa-regular fa-images"></i><span>Gallery</span></a
+            ><a
+              data-nav="portfolio.html"
+              href="portfolio.html"
+              class="nav-link theme-muted"
+              ><i class="fa-solid fa-layer-group"></i><span>Portfolio</span></a
+            ><a
+              data-nav="profile.html"
+              href="profile.html"
+              class="nav-link theme-muted"
+              ><i class="fa-regular fa-user"></i><span>My Profile</span></a
+            ><a data-nav="faq.html" href="faq.html" class="nav-link theme-muted"
+              ><i class="fa-regular fa-circle-question"></i><span>FAQ</span></a
+            >
+          </div>
+        </nav>
+        <div
+          data-mobile-menu
+          class="mobile-menu hidden border-t border-white/5 bg-primary/95 backdrop-blur-xl md:hidden"
+        >
+          <div class="mx-auto flex max-w-6xl flex-col px-5 py-3">
+            <a
+              data-nav="index.html"
+              href="index.html"
+              class="mobile-nav-link theme-muted"
+              ><i class="fa-solid fa-house"></i><span>Home</span></a
+            ><a
+              data-nav="gallery.html"
+              href="gallery.html"
+              class="mobile-nav-link theme-muted"
+              ><i class="fa-regular fa-images"></i><span>Gallery</span></a
+            ><a
+              data-nav="portfolio.html"
+              href="portfolio.html"
+              class="mobile-nav-link theme-muted"
+              ><i class="fa-solid fa-layer-group"></i><span>Portfolio</span></a
+            ><a
+              data-nav="profile.html"
+              href="profile.html"
+              class="mobile-nav-link theme-muted"
+              ><i class="fa-regular fa-user"></i><span>My Profile</span></a
+            ><a
+              data-nav="faq.html"
+              href="faq.html"
+              class="mobile-nav-link theme-muted"
+              ><i class="fa-regular fa-circle-question"></i><span>FAQ</span></a
+            >
+          </div>
+        </div>
+      </header>
+      <main>
+        <section class="relative overflow-hidden">
+          <div class="hero-glow"></div>
+          <div
+            class="mx-auto grid min-h-[88vh] max-w-6xl items-center gap-12 px-5 pb-20 pt-32 md:grid-cols-[1.15fr_.85fr]"
+          >
+            <div class="reveal">
+              <div class="section-label">Creative portfolio / 2026</div>
+              <h1
+                class="theme-text mt-5 max-w-3xl text-5xl font-black leading-[1.03] tracking-tight text-white md:text-7xl"
+              >
+                Ideas into <span class="text-soft">useful things.</span>
+              </h1>
+              <p
+                class="theme-muted mt-6 max-w-2xl text-base leading-8 text-muted md:text-lg"
+              >
+                I'm Ijal, an Informatics Engineering student at Electronic
+                Engineering Polytechnic Institute of Surabaya. I enjoy combining
+                technology, structured thinking, and creative ideas into useful
+                digital work.
+              </p>
+              <div class="mt-8 flex flex-wrap gap-3">
+                <a href="portfolio.html" class="btn-primary"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  Explore my work</a
+                ><a href="profile.html" class="btn-secondary"
+                  ><i class="fa-regular fa-user"></i> More about me</a
+                >
+              </div>
+              <div
+                class="mt-8 flex flex-wrap items-center gap-5 text-sm text-muted"
+              >
+                <span class="inline-flex items-center gap-2"
+                  ><i class="fa-solid fa-location-dot text-soft"></i>
+                  Indonesia</span
+                ><span class="inline-flex items-center gap-2"
+                  ><i class="fa-solid fa-circle-check text-soft"></i> Open to
+                  learning & collaboration</span
+                >
+              </div>
+            </div>
+            <div class="reveal">
+              <div
+                class="relative mx-auto max-w-[460px] rounded-[2rem] border border-white/10 bg-secondary/30 p-3 shadow-2xl shadow-black/10"
+              >
+                <div
+                  class="absolute -right-5 -top-5 flex h-16 w-16 items-center justify-center rounded-2xl border border-white/10 bg-primary/90 text-soft shadow-xl"
+                >
+                  <i class="fa-solid fa-wand-magic-sparkles text-xl"></i>
+                </div>
+                <div class="media-zoom overflow-hidden rounded-[1.5rem]">
+                  <img
+                    src="assets/images/profile-placeholder.svg"
+                    alt="Illustrated Ijal creative profile placeholder"
+                    class="aspect-square w-full object-cover"
+                  />
+                </div>
+                <div class="flex items-center justify-between px-2 pb-1 pt-4">
+                  <div>
+                    <p class="text-xs uppercase tracking-[.16em] text-soft">
+                      Current focus
+                    </p>
+                    <p class="theme-text mt-1 font-semibold text-white">
+                      Code × Design × Ideas
+                    </p>
+                  </div>
+                  <span
+                    class="flex h-9 w-9 items-center justify-center rounded-xl bg-white/5 text-muted"
+                    ><i class="fa-solid fa-arrow-trend-up"></i
+                  ></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="theme-border border-y border-white/10 bg-secondary/15">
+          <div
+            class="mx-auto grid max-w-6xl grid-cols-2 gap-3 px-5 py-6 sm:grid-cols-4"
+          >
+            <div class="stat-card">
+              <strong>01</strong><span>Informatics<br />Engineering</span>
+            </div>
+            <div class="stat-card">
+              <strong>04</strong><span>Core areas<br />of interest</span>
+            </div>
+            <div class="stat-card">
+              <strong>∞</strong><span>Things<br />to learn</span>
+            </div>
+            <div class="stat-card">
+              <strong>01</strong><span>Creative<br />portfolio</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="mx-auto max-w-6xl px-5 py-20">
+          <div class="reveal">
+            <div class="section-label">Currently</div>
+            <div
+              class="mt-4 flex flex-col justify-between gap-5 md:flex-row md:items-end"
+            >
+              <div>
+                <h2
+                  class="theme-text text-3xl font-black text-white md:text-4xl"
+                >
+                  What I'm into right now.
+                </h2>
+                <p class="theme-muted mt-3 max-w-2xl leading-7 text-muted">
+                  A quick snapshot of what is taking up my attention, from
+                  academic work to things I am still experimenting with.
+                </p>
+              </div>
+              <span class="status-badge"
+                ><span></span> Learning in progress</span
+              >
+            </div>
+          </div>
+          <div class="mt-9 grid gap-4 md:grid-cols-4">
+            <article
+              class="theme-surface card-hover rounded-2xl border border-white/10 p-5"
+            >
+              <i class="fa-solid fa-graduation-cap text-soft"></i>
+              <p
+                class="mt-5 text-xs font-bold uppercase tracking-widest text-muted"
+              >
+                Studying
+              </p>
+              <h3 class="theme-text mt-2 font-bold text-white">
+                Informatics Engineering
+              </h3>
+              <p class="theme-muted mt-2 text-sm leading-6 text-muted">
+                Electronic Engineering Polytechnic Institute of Surabaya.
+              </p>
+            </article>
+            <article
+              class="theme-surface card-hover rounded-2xl border border-white/10 p-5"
+            >
+              <i class="fa-solid fa-code text-soft"></i>
+              <p
+                class="mt-5 text-xs font-bold uppercase tracking-widest text-muted"
+              >
+                Learning
+              </p>
+              <h3 class="theme-text mt-2 font-bold text-white">
+                Web Development
+              </h3>
+              <p class="theme-muted mt-2 text-sm leading-6 text-muted">
+                Building responsive interfaces and practical web experiences.
+              </p>
+            </article>
+            <article
+              class="theme-surface card-hover rounded-2xl border border-white/10 p-5"
+            >
+              <i class="fa-solid fa-chart-column text-soft"></i>
+              <p
+                class="mt-5 text-xs font-bold uppercase tracking-widest text-muted"
+              >
+                Exploring
+              </p>
+              <h3 class="theme-text mt-2 font-bold text-white">
+                Data & Technology
+              </h3>
+              <p class="theme-muted mt-2 text-sm leading-6 text-muted">
+                Learning how data and software can support better decisions.
+              </p>
+            </article>
+            <article
+              class="theme-surface card-hover rounded-2xl border border-white/10 p-5"
+            >
+              <i class="fa-solid fa-pen-ruler text-soft"></i>
+              <p
+                class="mt-5 text-xs font-bold uppercase tracking-widest text-muted"
+              >
+                Creating
+              </p>
+              <h3 class="theme-text mt-2 font-bold text-white">
+                Digital & Visual Work
+              </h3>
+              <p class="theme-muted mt-2 text-sm leading-6 text-muted">
+                Exploring layouts, visuals, interaction, and creative
+                presentation.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="theme-border border-y border-white/10 bg-secondary/10">
+          <div class="mx-auto max-w-6xl px-5 py-20">
+            <div class="reveal">
+              <div class="section-label">What I do</div>
+              <h2
+                class="theme-text mt-3 text-3xl font-black text-white md:text-4xl"
+              >
+                A mix of technical and creative work.
+              </h2>
+            </div>
+            <div class="mt-9 grid gap-5 md:grid-cols-2">
+              <article class="feature-card reveal">
+                <div class="feature-number">01</div>
+                <div>
+                  <div class="feature-icon">
+                    <i class="fa-solid fa-laptop-code"></i>
+                  </div>
+                  <h3 class="theme-text mt-5 text-xl font-bold text-white">
+                    Web Development
+                  </h3>
+                  <p class="theme-muted mt-2 leading-7 text-muted">
+                    Designing and developing responsive interfaces with a focus
+                    on structure, usability, and clean interaction.
+                  </p>
+                </div>
+              </article>
+              <article class="feature-card reveal">
+                <div class="feature-number">02</div>
+                <div>
+                  <div class="feature-icon">
+                    <i class="fa-solid fa-chart-simple"></i>
+                  </div>
+                  <h3 class="theme-text mt-5 text-xl font-bold text-white">
+                    Data & Technology
+                  </h3>
+                  <p class="theme-muted mt-2 leading-7 text-muted">
+                    Breaking questions into structured problems and exploring
+                    data, programming, and digital solutions.
+                  </p>
+                </div>
+              </article>
+              <article class="feature-card reveal">
+                <div class="feature-number">03</div>
+                <div>
+                  <div class="feature-icon">
+                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                  </div>
+                  <h3 class="theme-text mt-5 text-xl font-bold text-white">
+                    Creative Design
+                  </h3>
+                  <p class="theme-muted mt-2 leading-7 text-muted">
+                    Using layout, visual hierarchy, and simple interaction to
+                    make information easier to understand.
+                  </p>
+                </div>
+              </article>
+              <article class="feature-card reveal">
+                <div class="feature-number">04</div>
+                <div>
+                  <div class="feature-icon">
+                    <i class="fa-solid fa-people-group"></i>
+                  </div>
+                  <h3 class="theme-text mt-5 text-xl font-bold text-white">
+                    Project & Teamwork
+                  </h3>
+                  <p class="theme-muted mt-2 leading-7 text-muted">
+                    Coordinating tasks, communicating clearly, and keeping
+                    collaborative work moving toward a shared result.
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="mx-auto max-w-6xl px-5 py-20">
+          <div class="reveal flex items-end justify-between gap-5">
+            <div>
+              <div class="section-label">Selected work</div>
+              <h2
+                class="theme-text mt-3 text-3xl font-black text-white md:text-4xl"
+              >
+                A few things I've been building.
+              </h2>
+            </div>
+            <a
+              href="portfolio.html"
+              class="hidden text-sm font-semibold text-muted transition hover:text-white md:block"
+              >View all <i class="fa-solid fa-arrow-right ml-1"></i
+            ></a>
+          </div>
+          <div class="mt-9 grid gap-5 md:grid-cols-3">
+            <article
+              class="theme-surface card-hover reveal overflow-hidden rounded-2xl border border-white/10 md:col-span-2"
+            >
+              <div class="media-zoom">
+                <img
+                  src="assets/images/gallery-02.svg"
+                  alt="Featured data dashboard concept project"
+                  class="aspect-[16/8] w-full object-cover"
+                />
+              </div>
+              <div class="p-5">
+                <div class="flex items-center justify-between">
+                  <span
+                    class="text-xs font-bold uppercase tracking-wider text-soft"
+                    >01 / Featured · Data</span
+                  ><span class="project-status"><span></span> Spotlight</span>
+                </div>
+                <h3 class="theme-text mt-3 text-xl font-bold text-white">
+                  Data Dashboard Concept
+                </h3>
+                <p
+                  class="theme-muted mt-2 max-w-2xl text-sm leading-6 text-muted"
+                >
+                  A focused dashboard concept for turning raw information into a
+                  readable decision view.
+                </p>
+                <a
+                  href="portfolio.html"
+                  class="mt-5 inline-flex items-center gap-2 text-sm font-bold text-soft transition-all duration-300 hover:gap-3"
+                  >View case study <i class="fa-solid fa-arrow-right"></i
+                ></a>
+              </div>
+            </article>
+            <article
+              class="theme-surface card-hover reveal overflow-hidden rounded-2xl border border-white/10"
+            >
+              <div class="media-zoom">
+                <img
+                  src="assets/images/gallery-05.svg"
+                  alt="Creative campaign concept"
+                  class="aspect-[4/3] w-full object-cover"
+                />
+              </div>
+              <div class="p-5">
+                <div class="flex items-center justify-between">
+                  <span
+                    class="text-xs font-bold uppercase tracking-wider text-soft"
+                    >02 / Creative</span
+                  ><span class="project-status"><span></span> Study</span>
+                </div>
+                <h3 class="theme-text mt-3 text-xl font-bold text-white">
+                  Visual Campaign Study
+                </h3>
+                <p class="theme-muted mt-2 text-sm leading-6 text-muted">
+                  A poster-led visual study exploring hierarchy, contrast, and
+                  concise communication.
+                </p>
+              </div>
+            </article>
+            <article
+              class="theme-surface card-hover reveal overflow-hidden rounded-2xl border border-white/10"
+            >
+              <div class="media-zoom">
+                <img
+                  src="assets/images/gallery-03.svg"
+                  alt="City notes visual project"
+                  class="aspect-[4/3] w-full object-cover"
+                />
+              </div>
+              <div class="p-5">
+                <div class="flex items-center justify-between">
+                  <span
+                    class="text-xs font-bold uppercase tracking-wider text-soft"
+                    >03 / Visual</span
+                  ><span class="project-status"><span></span> Exploration</span>
+                </div>
+                <h3 class="theme-text mt-3 text-xl font-bold text-white">
+                  City Notes
+                </h3>
+                <p class="theme-muted mt-2 text-sm leading-6 text-muted">
+                  A visual exploration of places, observations, and simple
+                  editorial storytelling.
+                </p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="theme-border border-y border-white/10 bg-secondary/10">
+          <div class="mx-auto max-w-6xl px-5 py-20">
+            <div class="reveal">
+              <div class="section-label">Tech stack</div>
+              <div
+                class="mt-4 flex flex-col justify-between gap-4 md:flex-row md:items-end"
+              >
+                <div>
+                  <h2
+                    class="theme-text text-3xl font-black text-white md:text-4xl"
+                  >
+                    Tools I use and explore.
+                  </h2>
+                  <p class="theme-muted mt-3 max-w-2xl leading-7 text-muted">
+                    A growing toolkit rather than a fixed list — the goal is to
+                    choose the right tool for the problem.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="mt-9 grid gap-4 md:grid-cols-3">
+              <div class="stack-panel">
+                <p class="stack-title">Languages</p>
+                <div class="mt-4 flex flex-wrap gap-2">
+                  <span class="skill-chip"
+                    ><i class="fa-brands fa-python mr-2 text-soft"></i
+                    >Python</span
+                  ><span class="skill-chip"
+                    ><i class="fa-brands fa-js mr-2 text-soft"></i
+                    >JavaScript</span
+                  ><span class="skill-chip"
+                    ><i class="fa-brands fa-html5 mr-2 text-soft"></i>HTML</span
+                  ><span class="skill-chip"
+                    ><i class="fa-brands fa-css3-alt mr-2 text-soft"></i
+                    >CSS</span
+                  >
+                </div>
+              </div>
+              <div class="stack-panel">
+                <p class="stack-title">Web & UI</p>
+                <div class="mt-4 flex flex-wrap gap-2">
+                  <span class="skill-chip"
+                    ><i class="fa-solid fa-wind mr-2 text-soft"></i>Tailwind
+                    CSS</span
+                  ><span class="skill-chip"
+                    ><i class="fa-solid fa-mobile-screen mr-2 text-soft"></i
+                    >Responsive UI</span
+                  ><span class="skill-chip"
+                    ><i class="fa-solid fa-palette mr-2 text-soft"></i>UI
+                    Design</span
+                  >
+                </div>
+              </div>
+              <div class="stack-panel">
+                <p class="stack-title">Tools</p>
+                <div class="mt-4 flex flex-wrap gap-2">
+                  <span class="skill-chip"
+                    ><i class="fa-brands fa-github mr-2 text-soft"></i
+                    >GitHub</span
+                  ><span class="skill-chip"
+                    ><i class="fa-solid fa-code mr-2 text-soft"></i>VS
+                    Code</span
+                  ><span class="skill-chip"
+                    ><i class="fa-brands fa-figma mr-2 text-soft"></i
+                    >Figma</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="mx-auto max-w-6xl px-5 py-20">
+          <div class="grid gap-12 md:grid-cols-[.85fr_1.15fr] md:items-start">
+            <div class="reveal">
+              <div class="section-label">My journey</div>
+              <h2
+                class="theme-text mt-3 text-3xl font-black text-white md:text-4xl"
+              >
+                Still becoming.
+              </h2>
+              <p class="theme-muted mt-4 leading-7 text-muted">
+                A simple timeline of the direction I'm taking — from learning
+                the fundamentals to turning them into projects and experiences.
+              </p>
+            </div>
+            <div class="timeline-wrap reveal">
+              <div class="timeline-item">
+                <span class="timeline-year">2024</span>
+                <div>
+                  <h3 class="theme-text font-bold text-white">
+                    Exploring technology
+                  </h3>
+                  <p class="theme-muted mt-1 text-sm leading-6 text-muted">
+                    Started building stronger interest in digital tools,
+                    programming, and creative technology.
+                  </p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <span class="timeline-year">2025</span>
+                <div>
+                  <h3 class="theme-text font-bold text-white">
+                    Entering Informatics Engineering
+                  </h3>
+                  <p class="theme-muted mt-1 text-sm leading-6 text-muted">
+                    Began studying Informatics Engineering and expanding
+                    technical foundations.
+                  </p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <span class="timeline-year">2025 — 2026</span>
+                <div>
+                  <h3 class="theme-text font-bold text-white">
+                    Projects & collaboration
+                  </h3>
+                  <p class="theme-muted mt-1 text-sm leading-6 text-muted">
+                    Learning through assignments, projects, organizational
+                    activities, and teamwork.
+                  </p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <span class="timeline-year">Now</span>
+                <div>
+                  <h3 class="theme-text font-bold text-white">
+                    Building & experimenting
+                  </h3>
+                  <p class="theme-muted mt-1 text-sm leading-6 text-muted">
+                    Developing a stronger portfolio while exploring web, data,
+                    design, and digital experiences.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="theme-border border-y border-white/10 bg-secondary/10">
+          <div class="mx-auto max-w-6xl px-5 py-20">
+            <div
+              class="reveal flex flex-col gap-5 md:flex-row md:items-end md:justify-between"
+            >
+              <div>
+                <div class="section-label">Beyond the screen</div>
+                <h2
+                  class="theme-text mt-3 text-3xl font-black text-white md:text-4xl"
+                >
+                  The work is not only about code.
+                </h2>
+              </div>
+              <p class="theme-muted max-w-xl leading-7 text-muted">
+                Interests outside a technical task often shape how I
+                communicate, organize, and look at a problem.
+              </p>
+            </div>
+            <div class="mt-9 grid gap-5 md:grid-cols-3">
+              <article class="interest-card reveal">
+                <div class="interest-icon">
+                  <i class="fa-solid fa-music"></i>
+                </div>
+                <h3 class="theme-text mt-5 text-xl font-bold text-white">
+                  Music
+                </h3>
+                <p class="theme-muted mt-2 leading-7 text-muted">
+                  Discovering artists, songs, and different sounds as a way to
+                  reset and stay curious.
+                </p>
+              </article>
+              <article class="interest-card reveal">
+                <div class="interest-icon">
+                  <i class="fa-solid fa-people-roof"></i>
+                </div>
+                <h3 class="theme-text mt-5 text-xl font-bold text-white">
+                  Organization
+                </h3>
+                <p class="theme-muted mt-2 leading-7 text-muted">
+                  Learning communication, coordination, responsibility, and how
+                  individual work affects a team.
+                </p>
+              </article>
+              <article class="interest-card reveal">
+                <div class="interest-icon">
+                  <i class="fa-solid fa-lightbulb"></i>
+                </div>
+                <h3 class="theme-text mt-5 text-xl font-bold text-white">
+                  Creative Work
+                </h3>
+                <p class="theme-muted mt-2 leading-7 text-muted">
+                  Playing with visual ideas, writing, layout, and small digital
+                  experiments beyond formal assignments.
+                </p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="mx-auto max-w-6xl px-5 py-20">
+          <div class="cta-panel reveal">
+            <div class="relative z-10 max-w-2xl">
+              <div class="section-label">Let's connect</div>
+              <h2
+                class="theme-text mt-4 text-4xl font-black leading-tight text-white md:text-5xl"
+              >
+                Have an idea?<br /><span class="text-soft"
+                  >Let's make it useful.</span
+                >
+              </h2>
+              <p class="theme-muted mt-5 max-w-xl leading-7 text-muted">
+                Whether it is a project, collaboration, or simply a conversation
+                about technology and creative work, feel free to reach out.
+              </p>
+              <div class="mt-7 flex flex-wrap gap-3">
+                <a href="profile.html#contact" class="btn-primary"
+                  ><i class="fa-solid fa-paper-plane"></i> Get in touch</a
+                ><a href="gallery.html" class="btn-secondary"
+                  ><i class="fa-regular fa-images"></i> See the gallery</a
+                >
+              </div>
+            </div>
+            <div class="cta-orb one"></div>
+            <div class="cta-orb two"></div>
+            <i class="fa-solid fa-arrow-up-right-dots cta-watermark"></i>
+          </div>
+        </section>
+      </main>
+      <footer class="border-t border-white/10">
+        <div
+          class="mx-auto grid max-w-6xl gap-10 px-5 py-12 md:grid-cols-[1.3fr_.7fr_.7fr]"
+        >
+          <div>
+            <a
+              href="index.html"
+              class="theme-text text-lg font-black text-white"
+              >Ijal's <span class="text-soft">Creative</span> Portfolio</a
+            >
+            <p class="theme-muted mt-3 max-w-md text-sm leading-7 text-muted">
+              A personal portfolio for an Informatics Engineering student
+              exploring technology, data, design, and creative digital work.
+            </p>
+          </div>
+          <div>
+            <p class="theme-text text-sm font-semibold text-white">Explore</p>
+            <div class="mt-4 grid gap-2 text-sm text-muted">
+              <a href="index.html" class="footer-link">Home</a
+              ><a href="gallery.html" class="footer-link">Gallery</a
+              ><a href="portfolio.html" class="footer-link">Portfolio</a
+              ><a href="profile.html" class="footer-link">My Profile</a
+              ><a href="faq.html" class="footer-link">FAQ</a>
+            </div>
+          </div>
+          <div>
+            <p class="theme-text text-sm font-semibold text-white">Connect</p>
+            <div class="mt-4 flex gap-2">
+              <a href="#" class="social-button" aria-label="Instagram"
+                ><i class="fa-brands fa-instagram"></i></a
+              ><a href="#" class="social-button" aria-label="GitHub"
+                ><i class="fa-brands fa-github"></i></a
+              ><a href="#" class="social-button" aria-label="LinkedIn"
+                ><i class="fa-brands fa-linkedin-in"></i></a
+              ><a
+                href="mailto:hello@ijalcreative.example"
+                class="social-button"
+                aria-label="Email"
+                ><i class="fa-solid fa-envelope"></i
+              ></a>
+            </div>
+            <p class="theme-muted mt-5 text-xs text-muted">
+              © <span data-year></span> Ijal. Built with HTML, Tailwind CDN &
+              JavaScript.
+            </p>
+          </div>
+        </div>
+      </footer>
+      <button
+        data-scroll-top
+        aria-label="Scroll to top"
+        class="scroll-top fixed bottom-6 right-6 z-40 flex h-12 w-12 items-center justify-center rounded-2xl bg-soft text-primary shadow-xl shadow-black/20"
+      >
+        <i class="fa-solid fa-arrow-up"></i>
+      </button>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>

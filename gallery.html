@@ -1,0 +1,475 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Ijal's Creative Portfolio — a personal space for data, design, digital projects, and creative experiments."
+    />
+    <meta name="author" content="Ijal" />
+    <meta name="theme-color" content="#22202E" />
+    <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/input.css" />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#22202E",
+              secondary: "#3F3C4F",
+              accent: "#5C4A78",
+              soft: "#B596AD",
+              muted: "#B8B5C3",
+            },
+          },
+        },
+      };
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Gallery — Ijal's Creative Portfolio</title>
+  </head>
+  <body class="theme-text min-h-screen bg-primary text-white antialiased">
+    <div class="page-shell">
+      <header
+        data-navbar
+        class="theme-nav fixed inset-x-0 top-0 z-50 border-b border-white/5 bg-primary/65 backdrop-blur-xl transition-all duration-500"
+      >
+        <nav
+          class="mx-auto flex max-w-6xl items-center justify-between px-5 py-4"
+          aria-label="Primary navigation"
+        >
+          <a
+            href="index.html"
+            class="brand-link theme-text group flex items-center gap-2 text-base font-bold tracking-tight text-white"
+            aria-label="Ijal's Creative Portfolio home"
+          >
+            <span
+              class="brand-mark flex h-9 w-9 items-center justify-center rounded-xl border border-white/10 bg-white/5 text-soft transition duration-300 group-hover:rotate-6 group-hover:border-soft/40"
+              ><i class="fa-solid fa-sparkles"></i
+            ></span>
+            <span
+              >Ijal's <span class="text-soft">Creative</span> Portfolio</span
+            >
+          </a>
+
+          <div class="flex items-center gap-2">
+            <button
+              data-theme-toggle
+              class="icon-button theme-text"
+              aria-label="Use light theme"
+              title="Use light theme"
+            >
+              <i class="fa-solid fa-sun"></i>
+            </button>
+            <button
+              data-menu-button
+              aria-expanded="false"
+              aria-label="Open menu"
+              class="icon-button theme-text md:hidden"
+            >
+              <i class="fa-solid fa-bars"></i>
+            </button>
+          </div>
+
+          <div data-desktop-nav class="hidden items-center gap-1 md:flex">
+            <a
+              data-nav="index.html"
+              href="index.html"
+              class="nav-link theme-muted"
+              ><i class="fa-solid fa-house"></i><span>Home</span></a
+            >
+            <a
+              data-nav="gallery.html"
+              href="gallery.html"
+              class="nav-link theme-muted"
+              ><i class="fa-regular fa-images"></i><span>Gallery</span></a
+            >
+            <a
+              data-nav="portfolio.html"
+              href="portfolio.html"
+              class="nav-link theme-muted"
+              ><i class="fa-solid fa-layer-group"></i><span>Portfolio</span></a
+            >
+            <a
+              data-nav="profile.html"
+              href="profile.html"
+              class="nav-link theme-muted"
+              ><i class="fa-regular fa-user"></i><span>My Profile</span></a
+            >
+            <a data-nav="faq.html" href="faq.html" class="nav-link theme-muted"
+              ><i class="fa-regular fa-circle-question"></i><span>FAQ</span></a
+            >
+          </div>
+        </nav>
+
+        <div
+          data-mobile-menu
+          class="mobile-menu hidden border-t border-white/5 bg-primary/95 backdrop-blur-xl md:hidden"
+        >
+          <div class="mx-auto flex max-w-6xl flex-col px-5 py-3">
+            <a
+              data-nav="index.html"
+              href="index.html"
+              class="mobile-nav-link theme-muted"
+              ><i class="fa-solid fa-house"></i><span>Home</span></a
+            >
+            <a
+              data-nav="gallery.html"
+              href="gallery.html"
+              class="mobile-nav-link theme-muted"
+              ><i class="fa-regular fa-images"></i><span>Gallery</span></a
+            >
+            <a
+              data-nav="portfolio.html"
+              href="portfolio.html"
+              class="mobile-nav-link theme-muted"
+              ><i class="fa-solid fa-layer-group"></i><span>Portfolio</span></a
+            >
+            <a
+              data-nav="profile.html"
+              href="profile.html"
+              class="mobile-nav-link theme-muted"
+              ><i class="fa-regular fa-user"></i><span>My Profile</span></a
+            >
+            <a
+              data-nav="faq.html"
+              href="faq.html"
+              class="mobile-nav-link theme-muted"
+              ><i class="fa-regular fa-circle-question"></i><span>FAQ</span></a
+            >
+          </div>
+        </div>
+      </header>
+      <div class="mx-auto max-w-6xl px-5 pt-28">
+        <nav aria-label="Breadcrumb" class="breadcrumb text-sm">
+          <a href="index.html">Home</a
+          ><i class="fa-solid fa-chevron-right text-[9px]"></i
+          ><span>Gallery</span>
+        </nav>
+      </div>
+      <main class="mx-auto max-w-6xl px-5 pb-24 pt-10">
+        <section class="reveal max-w-3xl">
+          <div class="section-label">Gallery</div>
+          <h1
+            class="theme-text mt-4 text-4xl font-black tracking-tight text-white md:text-5xl"
+          >
+            Visual notes, experiments, and things I want to remember.
+          </h1>
+          <p class="theme-muted mt-5 max-w-2xl text-base leading-8 text-muted">
+            A flexible space for photography studies, visual experiments,
+            short-form video, and small creative observations.
+          </p>
+        </section>
+        <section
+          class="reveal mt-9 flex flex-wrap gap-2"
+          aria-label="Gallery filters"
+        >
+          <button data-gallery-filter="all" class="filter-button active">
+            <i class="fa-solid fa-grid-2 mr-1"></i> All</button
+          ><button data-gallery-filter="photo" class="filter-button">
+            <i class="fa-regular fa-image mr-1"></i> Photos</button
+          ><button data-gallery-filter="creative" class="filter-button">
+            <i class="fa-solid fa-pen-nib mr-1"></i> Creative</button
+          ><button data-gallery-filter="video" class="filter-button">
+            <i class="fa-solid fa-play mr-1"></i> Videos
+          </button>
+        </section>
+        <section class="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          <article
+            data-gallery-category="photo"
+            data-gallery-title="Quiet Afternoon"
+            data-gallery-description="Light, space, and a slow frame — a simple study of atmosphere."
+            data-image="assets/images/gallery-01.svg"
+            class="gallery-item card-hover reveal cursor-pointer overflow-hidden rounded-2xl border border-white/10 bg-secondary/25"
+          >
+            <div class="media-zoom">
+              <img
+                src="assets/images/gallery-01.svg"
+                alt="Quiet Afternoon"
+                class="aspect-[4/3] w-full object-cover"
+              />
+            </div>
+            <div class="p-5">
+              <div class="flex items-center justify-between">
+                <span
+                  class="text-xs font-bold uppercase tracking-wider text-soft"
+                  >photo</span
+                ><span
+                  class="flex h-8 w-8 items-center justify-center rounded-lg bg-white/5 text-muted"
+                  ><i class="fa-solid fa-expand"></i
+                ></span>
+              </div>
+              <h2 class="theme-text mt-3 font-bold text-white">
+                Quiet Afternoon
+              </h2>
+              <p class="theme-muted mt-2 text-sm leading-6 text-muted">
+                Light, space, and a slow frame — a simple study of atmosphere.
+              </p>
+            </div>
+          </article>
+          <article
+            data-gallery-category="creative"
+            data-gallery-title="Visual Experiment"
+            data-gallery-description="A composition study built around form, contrast, and rhythm."
+            data-image="assets/images/gallery-02.svg"
+            class="gallery-item card-hover reveal cursor-pointer overflow-hidden rounded-2xl border border-white/10 bg-secondary/25"
+          >
+            <div class="media-zoom">
+              <img
+                src="assets/images/gallery-02.svg"
+                alt="Visual Experiment"
+                class="aspect-[4/3] w-full object-cover"
+              />
+            </div>
+            <div class="p-5">
+              <div class="flex items-center justify-between">
+                <span
+                  class="text-xs font-bold uppercase tracking-wider text-soft"
+                  >creative</span
+                ><span
+                  class="flex h-8 w-8 items-center justify-center rounded-lg bg-white/5 text-muted"
+                  ><i class="fa-solid fa-expand"></i
+                ></span>
+              </div>
+              <h2 class="theme-text mt-3 font-bold text-white">
+                Visual Experiment
+              </h2>
+              <p class="theme-muted mt-2 text-sm leading-6 text-muted">
+                A composition study built around form, contrast, and rhythm.
+              </p>
+            </div>
+          </article>
+          <article
+            data-gallery-category="photo"
+            data-gallery-title="City Notes"
+            data-gallery-description="A visual journal of shapes, lines, and movement found in the city."
+            data-image="assets/images/gallery-03.svg"
+            class="gallery-item card-hover reveal cursor-pointer overflow-hidden rounded-2xl border border-white/10 bg-secondary/25"
+          >
+            <div class="media-zoom">
+              <img
+                src="assets/images/gallery-03.svg"
+                alt="City Notes"
+                class="aspect-[4/3] w-full object-cover"
+              />
+            </div>
+            <div class="p-5">
+              <div class="flex items-center justify-between">
+                <span
+                  class="text-xs font-bold uppercase tracking-wider text-soft"
+                  >photo</span
+                ><span
+                  class="flex h-8 w-8 items-center justify-center rounded-lg bg-white/5 text-muted"
+                  ><i class="fa-solid fa-expand"></i
+                ></span>
+              </div>
+              <h2 class="theme-text mt-3 font-bold text-white">City Notes</h2>
+              <p class="theme-muted mt-2 text-sm leading-6 text-muted">
+                A visual journal of shapes, lines, and movement found in the
+                city.
+              </p>
+            </div>
+          </article>
+          <article
+            data-gallery-category="video"
+            data-gallery-title="Short Video / 00:27"
+            data-gallery-description="A placeholder-ready short video frame for future motion work."
+            data-image="assets/images/gallery-04.svg"
+            class="gallery-item card-hover reveal cursor-pointer overflow-hidden rounded-2xl border border-white/10 bg-secondary/25"
+          >
+            <div class="media-zoom">
+              <img
+                src="assets/images/gallery-04.svg"
+                alt="Short Video / 00:27"
+                class="aspect-[4/3] w-full object-cover"
+              />
+            </div>
+            <div class="p-5">
+              <div class="flex items-center justify-between">
+                <span
+                  class="text-xs font-bold uppercase tracking-wider text-soft"
+                  >video</span
+                ><span
+                  class="flex h-8 w-8 items-center justify-center rounded-lg bg-white/5 text-muted"
+                  ><i class="fa-solid fa-expand"></i
+                ></span>
+              </div>
+              <h2 class="theme-text mt-3 font-bold text-white">
+                Short Video / 00:27
+              </h2>
+              <p class="theme-muted mt-2 text-sm leading-6 text-muted">
+                A placeholder-ready short video frame for future motion work.
+              </p>
+            </div>
+          </article>
+          <article
+            data-gallery-category="creative"
+            data-gallery-title="Poster Study"
+            data-gallery-description="A concise poster exercise focused on hierarchy and readable typography."
+            data-image="assets/images/gallery-05.svg"
+            class="gallery-item card-hover reveal cursor-pointer overflow-hidden rounded-2xl border border-white/10 bg-secondary/25"
+          >
+            <div class="media-zoom">
+              <img
+                src="assets/images/gallery-05.svg"
+                alt="Poster Study"
+                class="aspect-[4/3] w-full object-cover"
+              />
+            </div>
+            <div class="p-5">
+              <div class="flex items-center justify-between">
+                <span
+                  class="text-xs font-bold uppercase tracking-wider text-soft"
+                  >creative</span
+                ><span
+                  class="flex h-8 w-8 items-center justify-center rounded-lg bg-white/5 text-muted"
+                  ><i class="fa-solid fa-expand"></i
+                ></span>
+              </div>
+              <h2 class="theme-text mt-3 font-bold text-white">Poster Study</h2>
+              <p class="theme-muted mt-2 text-sm leading-6 text-muted">
+                A concise poster exercise focused on hierarchy and readable
+                typography.
+              </p>
+            </div>
+          </article>
+          <article
+            data-gallery-category="photo"
+            data-gallery-title="Weekend / Field Note"
+            data-gallery-description="An abstract field note for ordinary moments worth keeping."
+            data-image="assets/images/gallery-06.svg"
+            class="gallery-item card-hover reveal cursor-pointer overflow-hidden rounded-2xl border border-white/10 bg-secondary/25"
+          >
+            <div class="media-zoom">
+              <img
+                src="assets/images/gallery-06.svg"
+                alt="Weekend / Field Note"
+                class="aspect-[4/3] w-full object-cover"
+              />
+            </div>
+            <div class="p-5">
+              <div class="flex items-center justify-between">
+                <span
+                  class="text-xs font-bold uppercase tracking-wider text-soft"
+                  >photo</span
+                ><span
+                  class="flex h-8 w-8 items-center justify-center rounded-lg bg-white/5 text-muted"
+                  ><i class="fa-solid fa-expand"></i
+                ></span>
+              </div>
+              <h2 class="theme-text mt-3 font-bold text-white">
+                Weekend / Field Note
+              </h2>
+              <p class="theme-muted mt-2 text-sm leading-6 text-muted">
+                An abstract field note for ordinary moments worth keeping.
+              </p>
+            </div>
+          </article>
+        </section>
+      </main>
+      <div
+        data-gallery-modal
+        class="modal-backdrop fixed inset-0 z-[70] flex items-center justify-center bg-black/80 p-5"
+      >
+        <div
+          class="modal-panel theme-surface relative max-h-[90vh] w-full max-w-4xl overflow-auto rounded-3xl border border-white/10 bg-primary p-4 md:p-6"
+        >
+          <button
+            data-gallery-close
+            aria-label="Close gallery"
+            class="icon-button absolute right-5 top-5 z-10 bg-primary/80"
+          >
+            <i class="fa-solid fa-xmark"></i></button
+          ><img
+            data-gallery-modal-image
+            src=""
+            alt=""
+            class="max-h-[65vh] w-full rounded-2xl object-contain"
+          />
+          <div class="mt-5 px-1">
+            <p
+              data-gallery-modal-category
+              class="text-xs font-bold uppercase tracking-wider text-soft"
+            ></p>
+            <h2
+              data-gallery-modal-title
+              class="theme-text mt-2 text-2xl font-black text-white"
+            ></h2>
+            <p
+              data-gallery-modal-description
+              class="theme-muted mt-2 max-w-2xl leading-7 text-muted"
+            ></p>
+          </div>
+        </div>
+      </div>
+      <footer class="theme-border border-t border-white/10 bg-primary">
+        <div
+          class="mx-auto grid max-w-6xl gap-8 px-5 py-12 md:grid-cols-[1.4fr_.8fr_.8fr]"
+        >
+          <div>
+            <div class="flex items-center gap-2 font-semibold text-white">
+              <span
+                class="flex h-8 w-8 items-center justify-center rounded-lg bg-soft text-primary"
+                ><i class="fa-solid fa-sparkles"></i
+              ></span>
+              Ijal's Creative Portfolio
+            </div>
+            <p class="theme-muted mt-4 max-w-md text-sm leading-7 text-muted">
+              A personal digital space for projects, experiments, visual notes,
+              and the process behind them.
+            </p>
+          </div>
+          <div>
+            <p class="theme-text text-sm font-semibold text-white">Explore</p>
+            <div class="mt-4 grid gap-2 text-sm text-muted">
+              <a href="index.html" class="footer-link">Home</a
+              ><a href="gallery.html" class="footer-link">Gallery</a
+              ><a href="portfolio.html" class="footer-link">Portfolio</a
+              ><a href="profile.html" class="footer-link">My Profile</a
+              ><a href="faq.html" class="footer-link">FAQ</a>
+            </div>
+          </div>
+          <div>
+            <p class="theme-text text-sm font-semibold text-white">Connect</p>
+            <div class="mt-4 flex gap-2">
+              <a href="#" class="social-button" aria-label="Instagram"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="#" class="social-button" aria-label="GitHub"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a href="#" class="social-button" aria-label="LinkedIn"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+              <a
+                href="mailto:hello@ijalcreative.example"
+                class="social-button"
+                aria-label="Email"
+                ><i class="fa-solid fa-envelope"></i
+              ></a>
+            </div>
+            <p class="theme-muted mt-5 text-xs text-muted">
+              © <span data-year></span> Ijal. Built with HTML, Tailwind CDN &
+              JavaScript.
+            </p>
+          </div>
+        </div>
+      </footer>
+      <button
+        data-scroll-top
+        aria-label="Scroll to top"
+        class="scroll-top fixed bottom-6 right-6 z-40 flex h-12 w-12 items-center justify-center rounded-2xl bg-soft text-primary shadow-xl shadow-black/20"
+      >
+        <i class="fa-solid fa-arrow-up"></i>
+      </button>
+    </div>
+    <script src="js/main.js"></script>
+    <script src="js/gallery.js"></script>
+  </body>
+</html>

@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Ijal's Creative Portfolio — a personal space for data, design, digital projects, and creative experiments."
+    />
+    <meta name="author" content="Ijal" />
+    <meta name="theme-color" content="#22202E" />
+    <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/input.css" />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#22202E",
+              secondary: "#3F3C4F",
+              accent: "#5C4A78",
+              soft: "#B596AD",
+              muted: "#B8B5C3",
+            },
+          },
+        },
+      };
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>FAQ — Ijal's Creative Portfolio</title>
+  </head>
+  <body class="theme-text min-h-screen bg-primary text-white antialiased">
+    <div class="page-shell">
+      <header
+        data-navbar
+        class="theme-nav fixed inset-x-0 top-0 z-50 border-b border-white/5 bg-primary/65 backdrop-blur-xl transition-all duration-500"
+      >
+        <nav
+          class="mx-auto flex max-w-6xl items-center justify-between px-5 py-4"
+          aria-label="Primary navigation"
+        >
+          <a
+            href="index.html"
+            class="brand-link theme-text group flex items-center gap-2 text-base font-bold tracking-tight text-white"
+            aria-label="Ijal's Creative Portfolio home"
+          >
+            <span
+              class="brand-mark flex h-9 w-9 items-center justify-center rounded-xl border border-white/10 bg-white/5 text-soft transition duration-300 group-hover:rotate-6 group-hover:border-soft/40"
+              ><i class="fa-solid fa-sparkles"></i
+            ></span>
+            <span
+              >Ijal's <span class="text-soft">Creative</span> Portfolio</span
+            >
+          </a>
+
+          <div class="flex items-center gap-2">
+            <button
+              data-theme-toggle
+              class="icon-button theme-text"
+              aria-label="Use light theme"
+              title="Use light theme"
+            >
+              <i class="fa-solid fa-sun"></i>
+            </button>
+            <button
+              data-menu-button
+              aria-expanded="false"
+              aria-label="Open menu"
+              class="icon-button theme-text md:hidden"
+            >
+              <i class="fa-solid fa-bars"></i>
+            </button>
+          </div>
+
+          <div data-desktop-nav class="hidden items-center gap-1 md:flex">
+            <a
+              data-nav="index.html"
+              href="index.html"
+              class="nav-link theme-muted"
+              ><i class="fa-solid fa-house"></i><span>Home</span></a
+            >
+            <a
+              data-nav="gallery.html"
+              href="gallery.html"
+              class="nav-link theme-muted"
+              ><i class="fa-regular fa-images"></i><span>Gallery</span></a
+            >
+            <a
+              data-nav="portfolio.html"
+              href="portfolio.html"
+              class="nav-link theme-muted"
+              ><i class="fa-solid fa-layer-group"></i><span>Portfolio</span></a
+            >
+            <a
+              data-nav="profile.html"
+              href="profile.html"
+              class="nav-link theme-muted"
+              ><i class="fa-regular fa-user"></i><span>My Profile</span></a
+            >
+            <a data-nav="faq.html" href="faq.html" class="nav-link theme-muted"
+              ><i class="fa-regular fa-circle-question"></i><span>FAQ</span></a
+            >
+          </div>
+        </nav>
+
+        <div
+          data-mobile-menu
+          class="mobile-menu hidden border-t border-white/5 bg-primary/95 backdrop-blur-xl md:hidden"
+        >
+          <div class="mx-auto flex max-w-6xl flex-col px-5 py-3">
+            <a
+              data-nav="index.html"
+              href="index.html"
+              class="mobile-nav-link theme-muted"
+              ><i class="fa-solid fa-house"></i><span>Home</span></a
+            >
+            <a
+              data-nav="gallery.html"
+              href="gallery.html"
+              class="mobile-nav-link theme-muted"
+              ><i class="fa-regular fa-images"></i><span>Gallery</span></a
+            >
+            <a
+              data-nav="portfolio.html"
+              href="portfolio.html"
+              class="mobile-nav-link theme-muted"
+              ><i class="fa-solid fa-layer-group"></i><span>Portfolio</span></a
+            >
+            <a
+              data-nav="profile.html"
+              href="profile.html"
+              class="mobile-nav-link theme-muted"
+              ><i class="fa-regular fa-user"></i><span>My Profile</span></a
+            >
+            <a
+              data-nav="faq.html"
+              href="faq.html"
+              class="mobile-nav-link theme-muted"
+              ><i class="fa-regular fa-circle-question"></i><span>FAQ</span></a
+            >
+          </div>
+        </div>
+      </header>
+      <div class="mx-auto max-w-6xl px-5 pt-28">
+        <nav aria-label="Breadcrumb" class="breadcrumb text-sm">
+          <a href="index.html">Home</a
+          ><i class="fa-solid fa-chevron-right text-[9px]"></i><span>FAQ</span>
+        </nav>
+      </div>
+      <main class="mx-auto max-w-4xl px-5 pb-24 pt-10">
+        <section class="reveal text-center">
+          <div class="section-label justify-center">FAQ</div>
+          <h1
+            class="theme-text mt-4 text-4xl font-black tracking-tight text-white md:text-5xl"
+          >
+            Questions, answered without the fluff.
+          </h1>
+          <p class="theme-muted mx-auto mt-5 max-w-2xl leading-8 text-muted">
+            A short guide to how this portfolio is structured and what can be
+            customized.
+          </p>
+        </section>
+        <section class="mt-10 grid gap-3">
+          <article
+            class="faq-item theme-surface reveal rounded-2xl border border-white/10 bg-secondary/20"
+          >
+            <button
+              data-faq-button
+              aria-expanded="false"
+              class="flex w-full items-center justify-between gap-5 p-5 text-left"
+            >
+              <span class="theme-text font-semibold text-white"
+                >What is this website for?</span
+              ><span
+                class="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-white/5 text-soft"
+                ><i class="faq-icon fa-solid fa-plus"></i
+              ></span>
+            </button>
+            <div class="faq-answer">
+              <div>
+                <p class="theme-muted px-5 pb-5 leading-7 text-muted">
+                  This is Ijal’s personal portfolio: a place to present selected
+                  projects, creative experiments, profile information, and
+                  visual work in one consistent system.
+                </p>
+              </div>
+            </div>
+          </article>
+          <article
+            class="faq-item theme-surface reveal rounded-2xl border border-white/10 bg-secondary/20"
+          >
+            <button
+              data-faq-button
+              aria-expanded="false"
+              class="flex w-full items-center justify-between gap-5 p-5 text-left"
+            >
+              <span class="theme-text font-semibold text-white"
+                >Can the portfolio be updated with real projects?</span
+              ><span
+                class="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-white/5 text-soft"
+                ><i class="faq-icon fa-solid fa-plus"></i
+              ></span>
+            </button>
+            <div class="faq-answer">
+              <div>
+                <p class="theme-muted px-5 pb-5 leading-7 text-muted">
+                  Yes. The project cards are structured so real titles,
+                  descriptions, tools, process notes, images, and links can
+                  replace the current sample content without changing the
+                  overall layout.
+                </p>
+              </div>
+            </div>
+          </article>
+          <article
+            class="faq-item theme-surface reveal rounded-2xl border border-white/10 bg-secondary/20"
+          >
+            <button
+              data-faq-button
+              aria-expanded="false"
+              class="flex w-full items-center justify-between gap-5 p-5 text-left"
+            >
+              <span class="theme-text font-semibold text-white"
+                >Can I add more gallery categories?</span
+              ><span
+                class="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-white/5 text-soft"
+                ><i class="faq-icon fa-solid fa-plus"></i
+              ></span>
+            </button>
+            <div class="faq-answer">
+              <div>
+                <p class="theme-muted px-5 pb-5 leading-7 text-muted">
+                  Yes. Add a category value to a gallery item and a matching
+                  filter button in gallery.html. The existing JavaScript will
+                  handle the filtering pattern.
+                </p>
+              </div>
+            </div>
+          </article>
+          <article
+            class="faq-item theme-surface reveal rounded-2xl border border-white/10 bg-secondary/20"
+          >
+            <button
+              data-faq-button
+              aria-expanded="false"
+              class="flex w-full items-center justify-between gap-5 p-5 text-left"
+            >
+              <span class="theme-text font-semibold text-white"
+                >Does the theme toggle save my preference?</span
+              ><span
+                class="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-white/5 text-soft"
+                ><i class="faq-icon fa-solid fa-plus"></i
+              ></span>
+            </button>
+            <div class="faq-answer">
+              <div>
+                <p class="theme-muted px-5 pb-5 leading-7 text-muted">
+                  Yes. The selected light/dark theme is stored in localStorage,
+                  so it remains consistent when moving between pages in the same
+                  browser.
+                </p>
+              </div>
+            </div>
+          </article>
+          <article
+            class="faq-item theme-surface reveal rounded-2xl border border-white/10 bg-secondary/20"
+          >
+            <button
+              data-faq-button
+              aria-expanded="false"
+              class="flex w-full items-center justify-between gap-5 p-5 text-left"
+            >
+              <span class="theme-text font-semibold text-white"
+                >Is the site responsive?</span
+              ><span
+                class="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-white/5 text-soft"
+                ><i class="faq-icon fa-solid fa-plus"></i
+              ></span>
+            </button>
+            <div class="faq-answer">
+              <div>
+                <p class="theme-muted px-5 pb-5 leading-7 text-muted">
+                  Yes. The layout adapts for mobile, tablet, and desktop,
+                  including a mobile navigation menu, responsive grids, readable
+                  spacing, and accessible focus states.
+                </p>
+              </div>
+            </div>
+          </article>
+        </section>
+        <div
+          class="theme-surface reveal mt-8 rounded-2xl border border-white/10 p-6 text-center"
+        >
+          <p class="theme-muted text-sm text-muted">
+            Still need something customized?
+          </p>
+          <a
+            href="profile.html"
+            class="mt-3 inline-flex items-center gap-2 text-sm font-bold text-soft"
+            >Go to profile <i class="fa-solid fa-arrow-right"></i
+          ></a>
+        </div>
+      </main>
+      <footer class="theme-border border-t border-white/10 bg-primary">
+        <div
+          class="mx-auto grid max-w-6xl gap-8 px-5 py-12 md:grid-cols-[1.4fr_.8fr_.8fr]"
+        >
+          <div>
+            <div class="flex items-center gap-2 font-semibold text-white">
+              <span
+                class="flex h-8 w-8 items-center justify-center rounded-lg bg-soft text-primary"
+                ><i class="fa-solid fa-sparkles"></i
+              ></span>
+              Ijal's Creative Portfolio
+            </div>
+            <p class="theme-muted mt-4 max-w-md text-sm leading-7 text-muted">
+              A personal digital space for projects, experiments, visual notes,
+              and the process behind them.
+            </p>
+          </div>
+          <div>
+            <p class="theme-text text-sm font-semibold text-white">Explore</p>
+            <div class="mt-4 grid gap-2 text-sm text-muted">
+              <a href="index.html" class="footer-link">Home</a
+              ><a href="gallery.html" class="footer-link">Gallery</a
+              ><a href="portfolio.html" class="footer-link">Portfolio</a
+              ><a href="profile.html" class="footer-link">My Profile</a
+              ><a href="faq.html" class="footer-link">FAQ</a>
+            </div>
+          </div>
+          <div>
+            <p class="theme-text text-sm font-semibold text-white">Connect</p>
+            <div class="mt-4 flex gap-2">
+              <a href="#" class="social-button" aria-label="Instagram"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="#" class="social-button" aria-label="GitHub"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a href="#" class="social-button" aria-label="LinkedIn"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+              <a
+                href="mailto:hello@ijalcreative.example"
+                class="social-button"
+                aria-label="Email"
+                ><i class="fa-solid fa-envelope"></i
+              ></a>
+            </div>
+            <p class="theme-muted mt-5 text-xs text-muted">
+              © <span data-year></span> Ijal. Built with HTML, Tailwind CDN &
+              JavaScript.
+            </p>
+          </div>
+        </div>
+      </footer>
+      <button
+        data-scroll-top
+        aria-label="Scroll to top"
+        class="scroll-top fixed bottom-6 right-6 z-40 flex h-12 w-12 items-center justify-center rounded-2xl bg-soft text-primary shadow-xl shadow-black/20"
+      >
+        <i class="fa-solid fa-arrow-up"></i>
+      </button>
+    </div>
+    <script src="js/main.js"></script>
+    <script src="js/faq.js"></script>
+  </body>
+</html>

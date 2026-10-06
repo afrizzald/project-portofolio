@@ -1,0 +1,412 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Ijal's Creative Portfolio — a personal space for data, design, digital projects, and creative experiments."
+    />
+    <meta name="author" content="Ijal" />
+    <meta name="theme-color" content="#22202E" />
+    <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/input.css" />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#22202E",
+              secondary: "#3F3C4F",
+              accent: "#5C4A78",
+              soft: "#B596AD",
+              muted: "#B8B5C3",
+            },
+          },
+        },
+      };
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>My Profile — Ijal's Creative Portfolio</title>
+  </head>
+  <body class="theme-text min-h-screen bg-primary text-white antialiased">
+    <div class="page-shell">
+      <header
+        data-navbar
+        class="theme-nav fixed inset-x-0 top-0 z-50 border-b border-white/5 bg-primary/65 backdrop-blur-xl transition-all duration-500"
+      >
+        <nav
+          class="mx-auto flex max-w-6xl items-center justify-between px-5 py-4"
+          aria-label="Primary navigation"
+        >
+          <a
+            href="index.html"
+            class="brand-link theme-text group flex items-center gap-2 text-base font-bold tracking-tight text-white"
+            aria-label="Ijal's Creative Portfolio home"
+          >
+            <span
+              class="brand-mark flex h-9 w-9 items-center justify-center rounded-xl border border-white/10 bg-white/5 text-soft transition duration-300 group-hover:rotate-6 group-hover:border-soft/40"
+              ><i class="fa-solid fa-sparkles"></i
+            ></span>
+            <span
+              >Ijal's <span class="text-soft">Creative</span> Portfolio</span
+            >
+          </a>
+
+          <div class="flex items-center gap-2">
+            <button
+              data-theme-toggle
+              class="icon-button theme-text"
+              aria-label="Use light theme"
+              title="Use light theme"
+            >
+              <i class="fa-solid fa-sun"></i>
+            </button>
+            <button
+              data-menu-button
+              aria-expanded="false"
+              aria-label="Open menu"
+              class="icon-button theme-text md:hidden"
+            >
+              <i class="fa-solid fa-bars"></i>
+            </button>
+          </div>
+
+          <div data-desktop-nav class="hidden items-center gap-1 md:flex">
+            <a
+              data-nav="index.html"
+              href="index.html"
+              class="nav-link theme-muted"
+              ><i class="fa-solid fa-house"></i><span>Home</span></a
+            >
+            <a
+              data-nav="gallery.html"
+              href="gallery.html"
+              class="nav-link theme-muted"
+              ><i class="fa-regular fa-images"></i><span>Gallery</span></a
+            >
+            <a
+              data-nav="portfolio.html"
+              href="portfolio.html"
+              class="nav-link theme-muted"
+              ><i class="fa-solid fa-layer-group"></i><span>Portfolio</span></a
+            >
+            <a
+              data-nav="profile.html"
+              href="profile.html"
+              class="nav-link theme-muted"
+              ><i class="fa-regular fa-user"></i><span>My Profile</span></a
+            >
+            <a data-nav="faq.html" href="faq.html" class="nav-link theme-muted"
+              ><i class="fa-regular fa-circle-question"></i><span>FAQ</span></a
+            >
+          </div>
+        </nav>
+
+        <div
+          data-mobile-menu
+          class="mobile-menu hidden border-t border-white/5 bg-primary/95 backdrop-blur-xl md:hidden"
+        >
+          <div class="mx-auto flex max-w-6xl flex-col px-5 py-3">
+            <a
+              data-nav="index.html"
+              href="index.html"
+              class="mobile-nav-link theme-muted"
+              ><i class="fa-solid fa-house"></i><span>Home</span></a
+            >
+            <a
+              data-nav="gallery.html"
+              href="gallery.html"
+              class="mobile-nav-link theme-muted"
+              ><i class="fa-regular fa-images"></i><span>Gallery</span></a
+            >
+            <a
+              data-nav="portfolio.html"
+              href="portfolio.html"
+              class="mobile-nav-link theme-muted"
+              ><i class="fa-solid fa-layer-group"></i><span>Portfolio</span></a
+            >
+            <a
+              data-nav="profile.html"
+              href="profile.html"
+              class="mobile-nav-link theme-muted"
+              ><i class="fa-regular fa-user"></i><span>My Profile</span></a
+            >
+            <a
+              data-nav="faq.html"
+              href="faq.html"
+              class="mobile-nav-link theme-muted"
+              ><i class="fa-regular fa-circle-question"></i><span>FAQ</span></a
+            >
+          </div>
+        </div>
+      </header>
+      <div class="mx-auto max-w-6xl px-5 pt-28">
+        <nav aria-label="Breadcrumb" class="breadcrumb text-sm">
+          <a href="index.html">Home</a
+          ><i class="fa-solid fa-chevron-right text-[9px]"></i
+          ><span>My Profile</span>
+        </nav>
+      </div>
+      <main class="mx-auto max-w-6xl px-5 pb-24 pt-10">
+        <section class="grid gap-8 md:grid-cols-[.75fr_1.25fr] md:items-center">
+          <div class="reveal">
+            <div class="rounded-3xl border border-white/10 bg-secondary/25 p-3">
+              <img
+                src="assets/images/profile-placeholder.svg"
+                alt="Illustrated Ijal profile"
+                class="w-full rounded-2xl"
+              />
+            </div>
+          </div>
+          <div class="reveal">
+            <div class="section-label">My profile</div>
+            <h1
+              class="theme-text mt-4 text-4xl font-black tracking-tight text-white md:text-5xl"
+            >
+              Ijal — learner, builder, creative problem-solver.
+            </h1>
+            <p class="theme-muted mt-6 text-base leading-8 text-muted">
+              My main interest sits between structured thinking and creative
+              execution. I enjoy learning how data, technology, and visual
+              communication can work together to make an idea easier to
+              understand and use.
+            </p>
+            <div class="mt-7 flex flex-wrap gap-3">
+              <a href="mailto:hello@ijalcreative.example" class="btn-primary"
+                ><i class="fa-solid fa-envelope"></i> Contact me</a
+              ><a href="portfolio.html" class="btn-secondary"
+                ><i class="fa-solid fa-layer-group"></i> View projects</a
+              >
+            </div>
+          </div>
+        </section>
+        <section class="mt-20 grid gap-5 md:grid-cols-2">
+          <article
+            class="theme-surface reveal rounded-3xl border border-white/10 p-7"
+          >
+            <div
+              class="flex h-11 w-11 items-center justify-center rounded-xl bg-soft/10 text-soft"
+            >
+              <i class="fa-solid fa-eye"></i>
+            </div>
+            <h2 class="theme-text mt-5 text-xl font-bold text-white">Vision</h2>
+            <p class="theme-muted mt-3 leading-7 text-muted">
+              Build useful things with a balance of logic, clarity, and
+              character — without making the process unnecessarily complicated.
+            </p>
+          </article>
+          <article
+            class="theme-surface reveal rounded-3xl border border-white/10 p-7"
+          >
+            <div
+              class="flex h-11 w-11 items-center justify-center rounded-xl bg-soft/10 text-soft"
+            >
+              <i class="fa-solid fa-bullseye"></i>
+            </div>
+            <h2 class="theme-text mt-5 text-xl font-bold text-white">
+              Mission
+            </h2>
+            <p class="theme-muted mt-3 leading-7 text-muted">
+              Keep learning, document the process, collaborate reliably, and
+              turn small experiments into work that can actually be used.
+            </p>
+          </article>
+        </section>
+        <section class="mt-20">
+          <div class="section-label reveal">Skills</div>
+          <div class="mt-7 grid gap-5 md:grid-cols-3">
+            <article
+              class="theme-surface card-hover reveal rounded-2xl border border-white/10 p-6"
+            >
+              <i class="fa-solid fa-database text-soft"></i>
+              <h3 class="theme-text mt-4 font-bold text-white">
+                Data & Analysis
+              </h3>
+              <p class="theme-muted mt-2 text-sm leading-6 text-muted">
+                Structured thinking, basic analysis, data preparation, and
+                communicating findings.
+              </p>
+              <div class="mt-4 flex flex-wrap gap-2">
+                <span class="skill-chip">Python</span
+                ><span class="skill-chip">SQL</span
+                ><span class="skill-chip">Excel</span>
+              </div>
+            </article>
+            <article
+              class="theme-surface card-hover reveal rounded-2xl border border-white/10 p-6"
+            >
+              <i class="fa-solid fa-code text-soft"></i>
+              <h3 class="theme-text mt-4 font-bold text-white">
+                Web & Digital
+              </h3>
+              <p class="theme-muted mt-2 text-sm leading-6 text-muted">
+                Building responsive interfaces and interactive front-end
+                prototypes.
+              </p>
+              <div class="mt-4 flex flex-wrap gap-2">
+                <span class="skill-chip">HTML</span
+                ><span class="skill-chip">Tailwind</span
+                ><span class="skill-chip">JavaScript</span>
+              </div>
+            </article>
+            <article
+              class="theme-surface card-hover reveal rounded-2xl border border-white/10 p-6"
+            >
+              <i class="fa-solid fa-pen-ruler text-soft"></i>
+              <h3 class="theme-text mt-4 font-bold text-white">Creative</h3>
+              <p class="theme-muted mt-2 text-sm leading-6 text-muted">
+                Visual hierarchy, documentation, presentation, and content
+                structure.
+              </p>
+              <div class="mt-4 flex flex-wrap gap-2">
+                <span class="skill-chip">Figma</span
+                ><span class="skill-chip">Layout</span
+                ><span class="skill-chip">Writing</span>
+              </div>
+            </article>
+          </div>
+        </section>
+        <section class="mt-20">
+          <div class="section-label reveal">Experience & education</div>
+          <div class="mt-8 grid gap-8 md:grid-cols-2">
+            <div class="relative border-l border-white/10 pl-7">
+              <span
+                class="timeline-dot absolute -left-[6px] top-1 h-3 w-3 rounded-full bg-soft"
+              ></span>
+              <p class="text-xs font-bold uppercase tracking-wider text-soft">
+                Experience
+              </p>
+              <h3 class="theme-text mt-3 text-xl font-bold text-white">
+                Organization & event work
+              </h3>
+              <p class="theme-muted mt-2 text-sm leading-7 text-muted">
+                Experience in organizational coordination, event support,
+                cross-division communication, mentoring, and structured
+                execution.
+              </p>
+              <div class="mt-5 flex flex-wrap gap-2">
+                <span class="skill-chip">Coordination</span
+                ><span class="skill-chip">Event</span
+                ><span class="skill-chip">Mentoring</span>
+              </div>
+            </div>
+            <div class="relative border-l border-white/10 pl-7">
+              <span
+                class="timeline-dot absolute -left-[6px] top-1 h-3 w-3 rounded-full bg-soft"
+              ></span>
+              <p class="text-xs font-bold uppercase tracking-wider text-soft">
+                Education
+              </p>
+              <h3 class="theme-text mt-3 text-xl font-bold text-white">
+                Informatics Engineering
+              </h3>
+              <p class="mt-2 text-sm font-medium text-soft">
+                Electronic Engineering Polytechnic Institute of Surabaya
+              </p>
+              <p class="theme-muted mt-2 text-sm leading-7 text-muted">
+                Currently developing foundations in programming, software
+                development, data, analytical thinking, and practical digital
+                projects.
+              </p>
+              <div class="mt-5 flex flex-wrap gap-2">
+                <span class="skill-chip">Data Science</span
+                ><span class="skill-chip">Programming</span
+                ><span class="skill-chip">Projects</span>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section
+          class="theme-surface reveal mt-20 rounded-3xl border border-white/10 bg-gradient-to-br from-accent/35 to-secondary/20 p-8 md:p-10"
+        >
+          <div
+            class="flex flex-col gap-7 md:flex-row md:items-center md:justify-between"
+          >
+            <div>
+              <div class="section-label">Let's connect</div>
+              <h2 class="theme-text mt-3 text-2xl font-black text-white">
+                Have a project, idea, or question?
+              </h2>
+              <p class="theme-muted mt-2 text-sm leading-7 text-muted">
+                For now, this contact address is a placeholder and can be
+                replaced with the real one.
+              </p>
+            </div>
+            <a
+              href="mailto:hello@ijalcreative.example"
+              class="btn-primary whitespace-nowrap"
+              ><i class="fa-solid fa-paper-plane"></i> Send an email</a
+            >
+          </div>
+        </section>
+      </main>
+      <footer class="theme-border border-t border-white/10 bg-primary">
+        <div
+          class="mx-auto grid max-w-6xl gap-8 px-5 py-12 md:grid-cols-[1.4fr_.8fr_.8fr]"
+        >
+          <div>
+            <div class="flex items-center gap-2 font-semibold text-white">
+              <span
+                class="flex h-8 w-8 items-center justify-center rounded-lg bg-soft text-primary"
+                ><i class="fa-solid fa-sparkles"></i
+              ></span>
+              Ijal's Creative Portfolio
+            </div>
+            <p class="theme-muted mt-4 max-w-md text-sm leading-7 text-muted">
+              A personal digital space for projects, experiments, visual notes,
+              and the process behind them.
+            </p>
+          </div>
+          <div>
+            <p class="theme-text text-sm font-semibold text-white">Explore</p>
+            <div class="mt-4 grid gap-2 text-sm text-muted">
+              <a href="index.html" class="footer-link">Home</a
+              ><a href="gallery.html" class="footer-link">Gallery</a
+              ><a href="portfolio.html" class="footer-link">Portfolio</a
+              ><a href="profile.html" class="footer-link">My Profile</a
+              ><a href="faq.html" class="footer-link">FAQ</a>
+            </div>
+          </div>
+          <div>
+            <p class="theme-text text-sm font-semibold text-white">Connect</p>
+            <div class="mt-4 flex gap-2">
+              <a href="#" class="social-button" aria-label="Instagram"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="#" class="social-button" aria-label="GitHub"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a href="#" class="social-button" aria-label="LinkedIn"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+              <a
+                href="mailto:hello@ijalcreative.example"
+                class="social-button"
+                aria-label="Email"
+                ><i class="fa-solid fa-envelope"></i
+              ></a>
+            </div>
+            <p class="theme-muted mt-5 text-xs text-muted">
+              © <span data-year></span> Ijal. Built with HTML, Tailwind CDN &
+              JavaScript.
+            </p>
+          </div>
+        </div>
+      </footer>
+      <button
+        data-scroll-top
+        aria-label="Scroll to top"
+        class="scroll-top fixed bottom-6 right-6 z-40 flex h-12 w-12 items-center justify-center rounded-2xl bg-soft text-primary shadow-xl shadow-black/20"
+      >
+        <i class="fa-solid fa-arrow-up"></i>
+      </button>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>

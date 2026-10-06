@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Ijal's Creative Portfolio — a personal space for data, design, digital projects, and creative experiments."
+    />
+    <meta name="author" content="Ijal" />
+    <meta name="theme-color" content="#22202E" />
+    <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/input.css" />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#22202E",
+              secondary: "#3F3C4F",
+              accent: "#5C4A78",
+              soft: "#B596AD",
+              muted: "#B8B5C3",
+            },
+          },
+        },
+      };
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>404 — Ijal's Creative Portfolio</title>
+  </head>
+  <body class="theme-text min-h-screen bg-primary text-white antialiased">
+    <div class="page-shell">
+      <header
+        data-navbar
+        class="theme-nav fixed inset-x-0 top-0 z-50 border-b border-white/5 bg-primary/65 backdrop-blur-xl transition-all duration-500"
+      >
+        <nav
+          class="mx-auto flex max-w-6xl items-center justify-between px-5 py-4"
+          aria-label="Primary navigation"
+        >
+          <a
+            href="index.html"
+            class="brand-link theme-text group flex items-center gap-2 text-base font-bold tracking-tight text-white"
+            aria-label="Ijal's Creative Portfolio home"
+          >
+            <span
+              class="brand-mark flex h-9 w-9 items-center justify-center rounded-xl border border-white/10 bg-white/5 text-soft transition duration-300 group-hover:rotate-6 group-hover:border-soft/40"
+              ><i class="fa-solid fa-sparkles"></i
+            ></span>
+            <span
+              >Ijal's <span class="text-soft">Creative</span> Portfolio</span
+            >
+          </a>
+
+          <div class="flex items-center gap-2">
+            <button
+              data-theme-toggle
+              class="icon-button theme-text"
+              aria-label="Use light theme"
+              title="Use light theme"
+            >
+              <i class="fa-solid fa-sun"></i>
+            </button>
+            <button
+              data-menu-button
+              aria-expanded="false"
+              aria-label="Open menu"
+              class="icon-button theme-text md:hidden"
+            >
+              <i class="fa-solid fa-bars"></i>
+            </button>
+          </div>
+
+          <div data-desktop-nav class="hidden items-center gap-1 md:flex">
+            <a
+              data-nav="index.html"
+              href="index.html"
+              class="nav-link theme-muted"
+              ><i class="fa-solid fa-house"></i><span>Home</span></a
+            >
+            <a
+              data-nav="gallery.html"
+              href="gallery.html"
+              class="nav-link theme-muted"
+              ><i class="fa-regular fa-images"></i><span>Gallery</span></a
+            >
+            <a
+              data-nav="portfolio.html"
+              href="portfolio.html"
+              class="nav-link theme-muted"
+              ><i class="fa-solid fa-layer-group"></i><span>Portfolio</span></a
+            >
+            <a
+              data-nav="profile.html"
+              href="profile.html"
+              class="nav-link theme-muted"
+              ><i class="fa-regular fa-user"></i><span>My Profile</span></a
+            >
+            <a data-nav="faq.html" href="faq.html" class="nav-link theme-muted"
+              ><i class="fa-regular fa-circle-question"></i><span>FAQ</span></a
+            >
+          </div>
+        </nav>
+
+        <div
+          data-mobile-menu
+          class="mobile-menu hidden border-t border-white/5 bg-primary/95 backdrop-blur-xl md:hidden"
+        >
+          <div class="mx-auto flex max-w-6xl flex-col px-5 py-3">
+            <a
+              data-nav="index.html"
+              href="index.html"
+              class="mobile-nav-link theme-muted"
+              ><i class="fa-solid fa-house"></i><span>Home</span></a
+            >
+            <a
+              data-nav="gallery.html"
+              href="gallery.html"
+              class="mobile-nav-link theme-muted"
+              ><i class="fa-regular fa-images"></i><span>Gallery</span></a
+            >
+            <a
+              data-nav="portfolio.html"
+              href="portfolio.html"
+              class="mobile-nav-link theme-muted"
+              ><i class="fa-solid fa-layer-group"></i><span>Portfolio</span></a
+            >
+            <a
+              data-nav="profile.html"
+              href="profile.html"
+              class="mobile-nav-link theme-muted"
+              ><i class="fa-regular fa-user"></i><span>My Profile</span></a
+            >
+            <a
+              data-nav="faq.html"
+              href="faq.html"
+              class="mobile-nav-link theme-muted"
+              ><i class="fa-regular fa-circle-question"></i><span>FAQ</span></a
+            >
+          </div>
+        </div>
+      </header>
+      <main class="flex min-h-screen items-center justify-center px-5 pt-20">
+        <section class="reveal max-w-2xl text-center">
+          <div
+            class="mx-auto flex h-24 w-24 items-center justify-center rounded-3xl border border-white/10 bg-secondary/30 text-4xl text-soft"
+          >
+            <i class="fa-solid fa-compass"></i>
+          </div>
+          <p
+            class="mt-8 text-8xl font-black tracking-tighter text-soft md:text-9xl"
+          >
+            404
+          </p>
+          <h1
+            class="theme-text mt-4 text-3xl font-black text-white md:text-4xl"
+          >
+            This page is not in the collection.
+          </h1>
+          <p class="theme-muted mx-auto mt-4 max-w-xl leading-7 text-muted">
+            The address may be wrong, or the page may have moved. Use the
+            navigation below to get back on track.
+          </p>
+          <div class="mt-8 flex flex-wrap justify-center gap-3">
+            <a href="index.html" class="btn-primary"
+              ><i class="fa-solid fa-house"></i> Back home</a
+            ><a href="portfolio.html" class="btn-secondary"
+              ><i class="fa-solid fa-layer-group"></i> View portfolio</a
+            >
+          </div>
+        </section>
+      </main>
+      <footer class="theme-border border-t border-white/10 bg-primary">
+        <div
+          class="mx-auto grid max-w-6xl gap-8 px-5 py-12 md:grid-cols-[1.4fr_.8fr_.8fr]"
+        >
+          <div>
+            <div class="flex items-center gap-2 font-semibold text-white">
+              <span
+                class="flex h-8 w-8 items-center justify-center rounded-lg bg-soft text-primary"
+                ><i class="fa-solid fa-sparkles"></i
+              ></span>
+              Ijal's Creative Portfolio
+            </div>
+            <p class="theme-muted mt-4 max-w-md text-sm leading-7 text-muted">
+              A personal digital space for projects, experiments, visual notes,
+              and the process behind them.
+            </p>
+          </div>
+          <div>
+            <p class="theme-text text-sm font-semibold text-white">Explore</p>
+            <div class="mt-4 grid gap-2 text-sm text-muted">
+              <a href="index.html" class="footer-link">Home</a
+              ><a href="gallery.html" class="footer-link">Gallery</a
+              ><a href="portfolio.html" class="footer-link">Portfolio</a
+              ><a href="profile.html" class="footer-link">My Profile</a
+              ><a href="faq.html" class="footer-link">FAQ</a>
+            </div>
+          </div>
+          <div>
+            <p class="theme-text text-sm font-semibold text-white">Connect</p>
+            <div class="mt-4 flex gap-2">
+              <a href="#" class="social-button" aria-label="Instagram"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="#" class="social-button" aria-label="GitHub"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a href="#" class="social-button" aria-label="LinkedIn"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+              <a
+                href="mailto:hello@ijalcreative.example"
+                class="social-button"
+                aria-label="Email"
+                ><i class="fa-solid fa-envelope"></i
+              ></a>
+            </div>
+            <p class="theme-muted mt-5 text-xs text-muted">
+              © <span data-year></span> Ijal. Built with HTML, Tailwind CDN &
+              JavaScript.
+            </p>
+          </div>
+        </div>
+      </footer>
+      <button
+        data-scroll-top
+        aria-label="Scroll to top"
+        class="scroll-top fixed bottom-6 right-6 z-40 flex h-12 w-12 items-center justify-center rounded-2xl bg-soft text-primary shadow-xl shadow-black/20"
+      >
+        <i class="fa-solid fa-arrow-up"></i>
+      </button>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>

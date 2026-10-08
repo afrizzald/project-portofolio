@@ -141,6 +141,13 @@ body::before {
 .brand-mark {
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
 }
+.brand-logo {
+  filter: brightness(0) invert(1);
+  transition: filter 0.35s ease;
+}
+html.light .brand-logo {
+  filter: brightness(0);
+}
 .nav-scrolled {
   background: rgba(34, 32, 46, 0.88);
   backdrop-filter: blur(18px);

@@ -22,6 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
   };
   items.forEach((item) =>
     item.addEventListener("click", () => {
+      if (item.dataset.galleryExternal === "true") return;
       image.src = item.dataset.image;
       image.alt = item.dataset.title || "Gallery item";
       title.textContent = item.dataset.title;

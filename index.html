@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- agar tampilan web responsif di berbagai perangkat -->
     <meta
       name="description"
-      content="Ijal's Creative Portfolio — Informatics Engineering at Electronic Engineering Polytechnic Institute of Surabaya (EEPIS), web development, photography, digital projects, and creative experiments."
+      content="Ijal's portfolio — Informatics Engineering at EEPIS, photography, organization activities, Instagram content, and creative work."
     />
     <meta name="author" content="Ijal" />
     <meta name="theme-color" content="#22202E" />
@@ -16,7 +16,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
-    <link rel="stylesheet" href="css/input.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <!-- Menambahkan warna khusus ke konfigurasi tema Tailwind. -->
     <script>
       tailwind.config = {
@@ -194,8 +194,8 @@
                 </div>
                 <div class="media-zoom overflow-hidden rounded-[1.5rem]">
                   <img
-                    src="assets/images/profile-placeholder.svg"
-                    alt="Illustrated Ijal creative profile placeholder"
+                    src="assets/images/photo-profile.svg"
+                    alt="Photo of Ijal"
                     class="aspect-square w-full object-cover"
                   />
                 </div>
@@ -405,7 +405,7 @@
           </div>
         </section>
 
-        <!-- Timeline perjalanan belajar dan perkembangan portfolio berdasarkan waktu. -->
+        <!-- Selected photos and video from the gallery. -->
         <section class="mx-auto max-w-6xl px-5 py-20">
           <div class="reveal flex items-end justify-between gap-5">
             <div>
@@ -417,52 +417,97 @@
               </h2>
             </div>
             <a
-              href="portfolio.html"
+              href="gallery.html"
               class="hidden text-sm font-semibold text-muted transition hover:text-white md:block"
-              >View all <i class="fa-solid fa-arrow-right ml-1"></i
+              >View gallery <i class="fa-solid fa-arrow-right ml-1"></i
             ></a>
           </div>
           <div class="mt-9 grid gap-5 md:grid-cols-3">
-            <article
-              class="theme-surface card-hover reveal overflow-hidden rounded-2xl border border-white/10 md:col-span-2"
+            <a
+              href="https://www.instagram.com/reel/DMKoH9vJi1Y/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="theme-surface card-hover reveal block overflow-hidden rounded-2xl border border-white/10"
             >
-              <div class="media-zoom">
+              <div class="media-zoom relative">
                 <img
-                  src="assets/images/gallery-02.svg"
-                  alt="Featured data dashboard concept project"
-                  class="aspect-[16/8] w-full object-cover"
+                  src="assets/images/thumbnail-video-angkatan.png"
+                  alt="Classmates' memories before their farewell"
+                  class="aspect-[4/3] w-full object-cover"
                 />
+                <span
+                  class="absolute inset-0 flex items-center justify-center bg-black/15"
+                  aria-hidden="true"
+                >
+                  <span
+                    class="flex h-14 w-14 items-center justify-center rounded-full border border-white/50 bg-primary/75 text-white shadow-xl backdrop-blur-sm"
+                    ><i class="fa-solid fa-play ml-1"></i
+                  ></span>
+                </span>
               </div>
               <div class="p-5">
                 <div class="flex items-center justify-between">
                   <span
                     class="text-xs font-bold uppercase tracking-wider text-soft"
-                    >01 / Featured · Data</span>
-                  <span class="project-status"><span></span> Spotlight</span>
+                    >video</span>
+                  <i class="fa-solid fa-arrow-up-right-from-square text-muted"></i>
                 </div>
                 <h3 class="theme-text mt-3 text-xl font-bold text-white">
-                  Data Dashboard Concept
+                  Memories Before Goodbye
                 </h3>
                 <p
-                  class="theme-muted mt-2 max-w-2xl text-sm leading-6 text-muted"
+                  class="theme-muted mt-2 text-sm leading-6 text-muted"
                 >
-                  A focused dashboard concept for turning raw information into a
-                  readable decision view.
+                  A collection of moments with my classmates, made to remember
+                  everyone before we went our separate ways.
                 </p>
-                <a
-                  href="portfolio.html"
-                  class="mt-5 inline-flex items-center gap-2 text-sm font-bold text-soft transition-all duration-300 hover:gap-3"
-                  >View case study <i class="fa-solid fa-arrow-right"></i
-                ></a>
               </div>
-            </article>
+            </a>
+            <a
+              href="https://www.instagram.com/p/DeT_DTeEg0d/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="theme-surface card-hover reveal block overflow-hidden rounded-2xl border border-white/10"
+            >
+              <div class="media-zoom relative">
+                <img
+                  src="assets/images/09_10_2026_Cover Berita_DEE.png"
+                  alt="PENS Mentoring 2026 Instagram feed cover"
+                  class="aspect-[4/3] w-full object-cover"
+                />
+                <span
+                  class="absolute inset-0 flex items-center justify-center bg-black/15"
+                  aria-hidden="true"
+                >
+                  <span
+                    class="flex h-14 w-14 items-center justify-center rounded-full border border-white/50 bg-primary/75 text-white shadow-xl backdrop-blur-sm"
+                    ><i class="fa-brands fa-instagram"></i
+                  ></span>
+                </span>
+              </div>
+              <div class="p-5">
+                <div class="flex items-center justify-between">
+                  <span
+                    class="text-xs font-bold uppercase tracking-wider text-soft"
+                    >photo / Instagram</span>
+                  <i class="fa-solid fa-arrow-up-right-from-square text-muted"></i>
+                </div>
+                <h3 class="theme-text mt-3 text-xl font-bold text-white">
+                  PENS Mentoring 2026 — Instagram Feed
+                </h3>
+                <p class="theme-muted mt-2 text-sm leading-6 text-muted">
+                  An Instagram feed post I handled, covering the opening of
+                  PENS Mentoring 2026 and character development for new students.
+                </p>
+              </div>
+            </a>
             <article
               class="theme-surface card-hover reveal overflow-hidden rounded-2xl border border-white/10"
             >
               <div class="media-zoom">
                 <img
-                  src="assets/images/gallery-05.svg"
-                  alt="Creative campaign concept"
+                  src="assets/images/photo-kucing.jpg"
+                  alt="Cute cat"
                   class="aspect-[4/3] w-full object-cover"
                 />
               </div>
@@ -470,41 +515,15 @@
                 <div class="flex items-center justify-between">
                   <span
                     class="text-xs font-bold uppercase tracking-wider text-soft"
-                    >02 / Creative</span>
-                  <span class="project-status"><span></span> Study</span>
+                    >photo</span>
+                  <i class="fa-solid fa-expand text-muted"></i>
                 </div>
                 <h3 class="theme-text mt-3 text-xl font-bold text-white">
-                  Visual Campaign Study
+                  Cute Cat
                 </h3>
                 <p class="theme-muted mt-2 text-sm leading-6 text-muted">
-                  A poster-led visual study exploring hierarchy, contrast, and
-                  concise communication.
-                </p>
-              </div>
-            </article>
-            <article
-              class="theme-surface card-hover reveal overflow-hidden rounded-2xl border border-white/10"
-            >
-              <div class="media-zoom">
-                <img
-                  src="assets/images/gallery-03.svg"
-                  alt="City notes visual project"
-                  class="aspect-[4/3] w-full object-cover"
-                />
-              </div>
-              <div class="p-5">
-                <div class="flex items-center justify-between">
-                  <span
-                    class="text-xs font-bold uppercase tracking-wider text-soft"
-                    >03 / Visual</span>
-                  <span class="project-status"><span></span> Exploration</span>
-                </div>
-                <h3 class="theme-text mt-3 text-xl font-bold text-white">
-                  City Notes
-                </h3>
-                <p class="theme-muted mt-2 text-sm leading-6 text-muted">
-                  A visual exploration of places, observations, and simple
-                  editorial storytelling.
+                  A curious little cat enjoying a quiet moment, captured in a
+                  warm and playful frame.
                 </p>
               </div>
             </article>
@@ -759,7 +778,8 @@
             >
             <p class="theme-muted mt-3 max-w-md text-sm leading-7 text-muted">
               A personal portfolio for an Informatics Engineering student
-              exploring technology, data, design, and creative digital work.
+              featuring my studies, photography, organization activities, and
+              Instagram content.
             </p>
           </div>
           <div>

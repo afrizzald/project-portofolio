@@ -439,6 +439,15 @@ html.light .theme-text {
 html.light .theme-muted {
   color: #6f6b78 !important;
 }
+html.light footer .theme-text {
+  color: var(--primary) !important;
+}
+html.light footer .font-semibold.text-white:not(.theme-text) {
+  color: var(--primary) !important;
+}
+html.light footer .theme-muted {
+  color: var(--muted) !important;
+}
 html.light main .text-muted {
   color: #6f6b78 !important;
 }

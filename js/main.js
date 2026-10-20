@@ -79,27 +79,6 @@ document.addEventListener("DOMContentLoaded", () => {
       setTimeout(() => (location.href = href), 260);
     });
   });
-  const homePhotoModal = document.querySelector("[data-home-photo-modal]");
-  const homePhotoOpen = document.querySelector("[data-home-photo-open]");
-  const homePhotoClose = document.querySelector("[data-home-photo-close]");
-  const closeHomePhoto = () => {
-    homePhotoModal?.classList.remove("active");
-    document.body.classList.remove("overflow-hidden");
-    homePhotoOpen?.focus();
-  };
-  homePhotoOpen?.addEventListener("click", () => {
-    homePhotoModal?.classList.add("active");
-    document.body.classList.add("overflow-hidden");
-    homePhotoClose?.focus();
-  });
-  homePhotoClose?.addEventListener("click", closeHomePhoto);
-  homePhotoModal?.addEventListener("click", (event) => {
-    if (event.target === homePhotoModal) closeHomePhoto();
-  });
-  document.addEventListener("keydown", (event) => {
-    if (event.key === "Escape" && homePhotoModal?.classList.contains("active"))
-      closeHomePhoto();
-  });
   const top = document.querySelector("[data-scroll-top]");
   const scrollHandler = () =>
     top?.classList.toggle("show", window.scrollY > 420);

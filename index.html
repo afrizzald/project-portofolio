@@ -502,27 +502,28 @@
               </div>
             </a>
             <article
-              class="theme-surface card-hover reveal overflow-hidden rounded-2xl border border-white/10"
+              data-gallery-category="photo"
+              data-gallery-title="Cute Cat"
+              data-gallery-description="A curious little cat enjoying a quiet moment, captured in a warm and playful frame."
+              data-image="assets/images/photo-kucing.jpg"
+              class="gallery-item theme-surface card-hover reveal cursor-pointer overflow-hidden rounded-2xl border border-white/10"
             >
-              <button
-                type="button"
-                data-home-photo-open
-                aria-label="Open full-size photo of the cat"
-                aria-haspopup="dialog"
-                class="media-zoom block w-full cursor-zoom-in text-left"
-              >
+              <div class="media-zoom">
                 <img
                   src="assets/images/photo-kucing.jpg"
                   alt="Cute cat"
                   class="aspect-[4/3] w-full object-cover"
                 />
-              </button>
+              </div>
               <div class="p-5">
                 <div class="flex items-center justify-between">
                   <span
                     class="text-xs font-bold uppercase tracking-wider text-soft"
-                    >photo</span>
-                  <i class="fa-solid fa-expand text-muted"></i>
+                    >photo</span
+                  ><span
+                    class="flex h-8 w-8 items-center justify-center rounded-lg bg-white/5 text-muted"
+                    ><i class="fa-solid fa-expand"></i
+                  ></span>
                 </div>
                 <h3 class="theme-text mt-3 text-xl font-bold text-white">
                   Cute Cat
@@ -772,34 +773,41 @@
         </section>
       </main>
       <div
-        data-home-photo-modal
+        data-gallery-modal
         role="dialog"
         aria-modal="true"
-        aria-labelledby="home-photo-title"
         class="modal-backdrop fixed inset-0 z-[70] flex items-center justify-center bg-black/80 p-5"
       >
         <div
-          class="modal-panel theme-surface relative max-h-[90vh] w-full max-w-5xl overflow-auto rounded-3xl border border-white/10 bg-primary p-4 md:p-6"
+          class="modal-panel theme-surface relative max-h-[90vh] w-full max-w-4xl overflow-auto rounded-3xl border border-white/10 bg-primary p-4 md:p-6"
         >
           <button
-            type="button"
-            data-home-photo-close
-            aria-label="Close photo"
+            data-gallery-close
+            aria-label="Close gallery"
             class="icon-button absolute right-5 top-5 z-10 bg-primary/80"
           >
             <i class="fa-solid fa-xmark"></i>
           </button>
           <img
+            data-gallery-modal-image
             src="assets/images/photo-kucing.jpg"
             alt="Cute cat"
-            class="max-h-[80vh] w-full rounded-2xl object-contain"
+            class="max-h-[65vh] w-full rounded-2xl object-contain"
           />
-          <h2
-            id="home-photo-title"
-            class="theme-text mt-4 text-xl font-bold text-white"
-          >
-            Cute Cat
-          </h2>
+          <div class="mt-5 px-1">
+            <p
+              data-gallery-modal-category
+              class="text-xs font-bold uppercase tracking-wider text-soft"
+            ></p>
+            <h2
+              data-gallery-modal-title
+              class="theme-text mt-2 text-2xl font-black text-white"
+            ></h2>
+            <p
+              data-gallery-modal-description
+              class="theme-muted mt-2 max-w-2xl leading-7 text-muted"
+            ></p>
+          </div>
         </div>
       </div>
       <!-- Footer berisi deskripsi, tautan halaman, media sosial, dan tahun hak cipta. -->
@@ -864,6 +872,7 @@
       </button>
     </div>
     <!-- Memuat JavaScript untuk interaksi seperti menu, tema, tahun, dan scroll. -->
+    <script src="js/gallery.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
